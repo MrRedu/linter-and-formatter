@@ -16,5 +16,7 @@
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",   // It's not necessary to import React in every component
+        "space-before-function-paren": "off" // It's not necessary to add spaces before function parentheses
     }
 }
