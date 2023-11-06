@@ -27,11 +27,11 @@ npm init @eslint/config
 > JavaScript modules (import/export)
 > React
 > TypeScript? (No / Yes)
-> Browser y/o Node
+> Browser and/or Node
 > Use a popular style guide
 > Standard
 > JSON
 > pnpm / npm / yarn
 ```
 
-[Archivo por defecto de la instalación anterior, con reglas arregladas](./configs/.eslintrc.json)
+[Archivo por defecto de la instalación anterior, con reglas agregadas](./configs/.eslintrc.json)
