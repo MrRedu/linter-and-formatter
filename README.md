@@ -20,7 +20,6 @@ Sea que trabajes en diferentes computadores o tengas más compañeros en el equi
 ### Instalación manual de ESLint
 _Es necesario tener instalada la extensión de [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)_
 
-prettier-ignore
 ```bash
 npm init @eslint/config
 
@@ -49,3 +48,18 @@ pnpm i -D -E prettier
 [Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc)
 - Para que se formatee el archivo al guardar, es necesario ir a Settings de VSCode `(Ctrl + ,)`, y activar la regla que lleva por nombre: *"Editor: Format On Save"*
 - [Recomendable: Agregar archivo .prettierrcignore](./configs/.prettierignore)
+
+### Colisión/conflictos entre ESLint y Prettier
+En caso que tengamos reglas de ESLint que estén teniendo conflictos con reglas de Prettier (como podría ser el utlizar `;` o no), podemos instalar el paquete:
+```bash
+npm i -D -E eslint-config-prettier
+or
+pnpm i -D -E eslint-config-prettier
+```
+Y en el archivo [.eslintrc.json](./configs/.eslintrc.json), agregar:
+```json
+"extends": [
+    "...",
+    "eslint-config-prettier"
+],
+```
