@@ -35,7 +35,7 @@ npm init @eslint/config
 > pnpm / npm / yarn
 ```
 
-[Archivo por defecto de la instalación anterior, con reglas agregadas](./configs/.eslintrc.json)
+[Archivo por defecto de la instalación anterior *(con algunas reglas agregadas)*](./configs/.eslintrc.json)
 
 ### Instalación manual de Prettier
 _Es necesario tener instalada la extensión de [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)_
@@ -46,4 +46,5 @@ or
 pnpm i -D -E prettier
 ```
 
-[Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc)
+[Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc) <br>
+[Recomendable: Agregar archivo .prettierrcignore](./configs/.prettierignore)
