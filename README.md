@@ -46,5 +46,6 @@ or
 pnpm i -D -E prettier
 ```
 
-[Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc) <br>
-[Recomendable: Agregar archivo .prettierrcignore](./configs/.prettierignore)
+[Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc)
+- Para que se formatee el archivo al guardar, es necesario ir a Settings de VSCode `(Ctrl + ,)`, y activar la regla que lleva por nombre: *"Editor: Format On Save"*
+- [Recomendable: Agregar archivo .prettierrcignore](./configs/.prettierignore)
