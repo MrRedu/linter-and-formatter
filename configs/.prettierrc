@@ -1,0 +1,13 @@
+// https://prettier.io/docs/en/options
+// .prettierrc
+
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid"
+}
+
+// If you want to add new rules:
+// https://prettier.io/docs/en/options

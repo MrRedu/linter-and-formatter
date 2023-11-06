@@ -17,9 +17,10 @@ const a=      5; // <- El formatter agrega/borra espacios donde sea necesario, s
 
 Sea que trabajes en diferentes computadores o tengas más compañeros en el equipo de desarrollo, cada persona y sistema tiene una configuración distinta de cómo se escribirá el código. Estableciendo estas configuraciones por proyecto, dará como resultado que todo el código terminará siendo escrito con un mismo estilo basado en las mismas reglas. En caso contrario, se podrían crear commits fantasmas _(básicamente commits donde lo único que habrá cambiado es un espacio, un punto y coma, etc)_.
 
-### Instalación manual de Eslint
-_Es necesario tener instalada la extensión de [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)_
+### Instalación manual de ESLint
+_Es necesario tener instalada la extensión de [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)_
 
+prettier-ignore
 ```bash
 npm init @eslint/config
 
@@ -35,3 +36,14 @@ npm init @eslint/config
 ```
 
 [Archivo por defecto de la instalación anterior, con reglas agregadas](./configs/.eslintrc.json)
+
+### Instalación manual de Prettier
+_Es necesario tener instalada la extensión de [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)_
+
+```bash
+npm i -D -E prettier
+or
+pnpm i -D -E prettier
+```
+
+[Agregar archivo para establecer reglas de Prettier](./configs/.prettierrc)
