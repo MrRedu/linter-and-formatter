@@ -15,7 +15,7 @@ const a=      5; // <- El formatter agrega/borra espacios donde sea necesario, s
 
 ### ¿Por qué deberían utilizarse?
 
-Sea que trabajes en diferentes computadores o tengas más compañeros en el equipo de desarrollo, cada persona y sistema tiene una configuración distinta de cómo se escribirá el código. Estableciendo estas configuraciones por proyecto, dará como resultado que todo el código terminará siendo escrito con un mismo estilo basado en las mismas reglas. En caso contrario, se podrían crear commits fantasmas _(básicamente commits donde lo único que habrá cambiado es un espacio, un punto y coma, etc)_.
+Sea que trabajes en diferentes computadores o tengas más compañeros en el equipo de desarrollo, cada persona y sistema tiene una configuración distinta de cómo se escribirá el código. Estableciendo estas configuraciones por proyecto, dará como resultado que todo el código terminará siendo escrito con un mismo estilo basado en las mismas reglas. En caso contrario, se podrían crear commits fantasmas _(básicamente commits donde lo único que habrá cambiado es un espacio, un punto y coma, unos paréntesis, etc)_ y un millón de variantes del cómo se escribe código.
 
 ### Instalación manual de ESLint
 
@@ -69,4 +69,16 @@ Y en el archivo [.eslintrc.json](./configs/.eslintrc.json), agregar:
     "...",
     "eslint-config-prettier"
 ],
+```
+
+### [Agregar comandos en el package.json](./configs/package.json)
+
+**¿Por qué deberíamos agregar comandos cuando el formateo/visualización de errores se realizan automáticamente con las extensiones?** <br>
+Básicamente por esa misma razón, podrían haber personas sin las extensiones/configuraciones, por lo que siempre hay que dar una opción extra para realizar estas acciones desde el terminal. Además que se necesitaran para automatizaciones, despliegues, etc.
+
+```json
+"scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0"
+},
 ```
