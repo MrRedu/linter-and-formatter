@@ -4,7 +4,7 @@
       "dev": "000",
       "build": "000 build",
       "format": "prettier --write .", // remember to add .prettierignore or dist and package-lock.json 🤡
-      "lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0"
+      "lint": "eslint . --ext .js,.jsx --report-unused-disable-directives --max-warnings 0"
     },
     "dependencies": {
       "react": "0.0.0",

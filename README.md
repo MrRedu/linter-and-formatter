@@ -79,6 +79,8 @@ Básicamente por esa misma razón, podrían haber personas sin las extensiones/c
 ```json
 "scripts": {
     "format": "prettier --write .",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext .js,.jsx --report-unused-disable-directives --max-warnings 0", // javascript
+    // or
+    "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0" // typescript
 },
 ```
